@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Online Cinema</title>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar container">
+            <a href="#">
+                <img src="img/logo.svg" alt="logo">
+            </a>
+            <div class="mobile-menu-wrapper">
+                <button class="m-menu">
+                    <svg width="15" height="9" fill="none" xmlns="http://w3.org">
+                        <line y1="0.5" x2="15" y2="0.5" stroke="white" />
+                        <line y1="4.5" x2="15" y2="4.5" stroke="white" />
+                        <line y1="8.5" x2="15" y2="8.5" stroke="white" />
+                    </svg>
+                </button>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#" class="menu-link">Главная</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Фильмы</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Кинотеатры</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">События</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Поддержка</a></li>
+                    </ul>
+                </nav>
+            </div>    
+            <div class="user">
+                <span class="user-name">Привтствую вас, Иван</span>
+                <img class="avatar" src="img/orig.jpg" alt="аватарка">
+            </div>
+        </div>
+        </div>
+        <div class="film container"> 
+            <div class="film-info">
+                <small class="film-title-small">Avengers: Infinity War</small>
+                <h1 class="film-title">Мстители: война бесконечности</h1>
+                <p class="film-description">Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один superгерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь неопределённой.</p>
+                <div class="film-details">
+                    <div class="time">
+                        <img src="img/clock 1.svg" alt="clock" class="time-icon">
+                        <span class="time-counter">240 мин.</span>
+                    </div>
+                    <div class="rating">
+                        <img src="img/imdb.png" alt="imdb logo" class="rating-icon">
+                        <span class="rating-counter"><strong class="rating-current">9.2</strong> / 10</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="film-trailer">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://w3.org">
+                    <circle cx="50" cy="50" r="50" fill="white"/>
+                    <g clip-path="url(#clip0_1_158)">
+                        <path d="M43.0758 30.0033C39.3071 27.8416 36.2518 29.6125 36.2518 33.9556V66.0059C36.2518 70.3533 39.3071 72.1219 43.0758 69.9623L71.0893 53.8967C74.8592 51.7342 74.8592 48.2306 71.0893 46.0686L43.0758 30.0033Z" fill="#F20D01"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1_158">
+                            <rect width="41.8013" height="41.8013" fill="white" transform="translate(34.1837 29.0816)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+        </div>
+        <div class="session container">
+            <div class="session-date">
+                <span class="session-label">Дата</span>
+                <div class="session-date-block">
+                    <div class="session-date-item">
+                        <span class="session-month">АПР</span>
+                        <span class="session-day">27</span>
+                        <span class="session-week">ПТ</span>
+                    </div>
+                    <div class="session-date-item">
+                        <span class="session-month">АПР</span>
+                        <span class="session-day">28</span>
+                        <span class="session-week">СБ</span>
+                    </div>
+                    <div class="session-date-item">
+                        <span class="session-month">АПР</span>
+                        <span class="session-day">29</span>
+                        <span class="session-week">ВС</span>
+                    </div>
+                    <div class="session-date-item">
+                        <span class="session-month">АПР</span>
+                        <span class="session-day">30</span>
+                        <span class="session-week">ПН</span>
+                    </div>
+                </div>
+            </div>
+            <div class="session-cinema">
+                <span class="session-label">Кинотеатр</span>
+                <select class="select" name="cinema">
+                    <option value="Октябрь, ул. Калужская 28">Октябрь, ул. Калужская 28</option>
+                    <option value="IMAX, ул. Ленина 12">IMAX, ул. Ленина 12</option>
+                    <option value="CinemaMall, ул. Хороводная 5">CinemaMall, ул. Хороводная 5</option>
+                </select>
+            </div>
+            <div class="session-time">
+                <span class="session-label">Время</span>
+                <select class="select" name="time">
+                    <option value="12:00">12:00</option>
+                    <option value="16:30">16:30</option>
+                    <option value="17:25">17:25</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="scheme">
+            <div class="screen-wrapper">
+                <svg class="scheme-svg" width="1100" height="640" xmlns="http://w3.org">
+                    <defs>
+                        <g id="seat-template">
+                            <rect x="0" y="0" width="38" height="32" fill="transparent" />
+                            <rect class="seat-base" x="5.5" y="2" width="26" height="23" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path class="seat-bottom" d="M1 24.5 C1 24.5, 0 32, 7 32 H30 C37 32, 36 24.5, 36 24.5" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </g>
+                        <linearGradient id="screen-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="rgba(255, 255, 255, 0.22)"/>
+                            <stop offset="25%" stop-color="rgba(255, 255, 255, 0.07)"/>
+                            <stop offset="100%" stop-color="rgba(98, 20, 2, 0)"/>
+                        </linearGradient>
+                    </defs>
+                    <g transform="translate(0, 25)">
+                        <polygon points="135,3 965,3 1045,105 55,105" fill="url(#screen-grad)"/>
+                        <line x1="20" y1="0" x2="1080" y2="0" stroke="#1d0300" stroke-width="10" stroke-linecap="round"/>
+                    </g>
+                    <g id="top-block" transform="translate(260, 175)"></g>
+                    <g id="left-block" transform="translate(60, 405)"></g>
+                    <g id="right-block" transform="translate(650, 405)"></g>
+                </svg>
+            </div>
+            <div class="legend">
+                <div class="legend-item"><span class="legend-badge seat-free"></span>Свободно</div>
+                <div class="legend-item"><span class="legend-badge seat-selected"></span>Выбрано</div>
+                <div class="legend-item"><span class="legend-badge seat-booked"></span>Занято</div>
+            </div>
+            <div class="booking-total">
+                <div class="price-info">
+                    <span class="price-label">Итого к оплате:</span>
+                    <span class="price-value"><strong class="price-total">0</strong> ₽</span>
+                </div>
+                <button class="btn-booking" type="button">Забронировать места</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
